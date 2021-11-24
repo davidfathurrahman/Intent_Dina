@@ -11,36 +11,42 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/choose_color"
+        android:text="@string/choose_hobby"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:textSize="24sp"
-        android:textColor="@color/black"
+        android:textColor="#DC0F0F"
         android:gravity="center"/>
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rg_color"
+        android:id="@+id/rg_hobby"
         android:orientation="vertical">
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rb_blue"
-            android:text="@string/blue"
+            android:id="@+id/rb_drawing"
+            android:text="@string/drawing"
             android:layout_marginBottom="@dimen/activity_vertical_margin"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rb_red"
-            android:text="@string/red"
+            android:id="@+id/rb_cooking"
+            android:text="@string/cooking"
             android:layout_marginBottom="@dimen/activity_vertical_margin"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rb_yellow"
-            android:text="@string/yellow"
+            android:id="@+id/rb_farming"
+            android:text="@string/farming"
             android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_the_other"
+            android:text="@string/the_other"
+            android:layout_marginBottom="15dp"/>
     </RadioGroup>
     <Button
         android:layout_width="match_parent"

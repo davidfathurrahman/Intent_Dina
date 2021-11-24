@@ -33,13 +33,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnResultFromActivity.setOnClickListener(this)
 
         tvResult = findViewById(R.id.tv_result)
-        ColorReceived()
+        HobbyReceived()
     }
 
-    private fun ColorReceived() {
+    private fun HobbyReceived() {
         val bundle = intent.extras
-        val warna = bundle?.getString("Warna")
-        tvResult.text = warna
+        val Hobby = bundle?.getString("Hobby")
+        tvResult.text = Hobby
     }
 
     override fun onClick(v: View?) {

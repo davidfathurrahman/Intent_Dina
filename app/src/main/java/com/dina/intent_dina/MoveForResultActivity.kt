@@ -8,7 +8,7 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 
 class MoveForResultActivity : AppCompatActivity() {
-    var rgColor: RadioGroup? = null
+    var rgHobby: RadioGroup? = null
     lateinit var radioButton: RadioButton
     private lateinit var btnChoose: Button
 
@@ -16,15 +16,15 @@ class MoveForResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_move_for_result)
 
-        rgColor = findViewById(R.id.rg_color)
+        rgHobby = findViewById(R.id.rg_hobby)
         btnChoose = findViewById(R.id.btn_choose)
         btnChoose.setOnClickListener {
-            val selectOption: Int = rgColor!!.checkedRadioButtonId
+            val selectOption: Int = rgHobby!!.checkedRadioButtonId
             radioButton = findViewById(selectOption)
 
             val intent = Intent(this, MainActivity::class.java)
             val bundle = Bundle()
-            bundle.putString("Warna", radioButton.text as String)
+            bundle.putString("Hobby", radioButton.text as String)
             intent.putExtras(bundle)
             startActivity(intent)
         }
